@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
+    <style>
+       .mydiv{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        
+       }
+
+       .mydiv h4{
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: blueviolet;
+       }
+
+      .mydiv form{
+        width: 50%;
+        height: 100%;
+        background-color: #ffff;
+        box-shadow: 10px 15px 10px 20px gray;
+        padding: 30px 40px;
+        margin-left: 300px;
+        margin-bottom: 20px
+      }
+
+       .mydiv form label{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        }
+
+       .mydiv form input[type=text]{
+        width: 90%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        
+
+       }
+       .mydiv form input[type=email]{
+        width: 90%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+
+       }
+       .mydiv form input[type=phone]{
+        width: 90%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+
+       }
+       .mydiv form input[type=date]{
+        width: 90%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+       }
+
+        button{
+        width: 95%;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background-color: blueviolet;
+        border: none;
+        font-size: 20px;
+        color: #ffff;
+        cursor: pointer;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <!-- 1. Create html page with heading, sub heading and sub-sub heading. Which tags will you use ? -->
+    <h1>What's your name ?</h1>
+    
+    <h2>what's your surname ?</h2>
+    
+    <h3>What's your Mother name ?</h3>
+    
+    <h4>What's your Father name ?</h4>
+    
+    <h5>what's your sister's name ? </h5>
+    
+    <h6>what's your bother's name ?</h6>
+    
+    <br><hr>
+
+    <!-- 2. Create a page with 3 wallpapers from internet. Display a line after each wallpaper. -->
+       <div>
+        <img src="https://m.media-amazon.com/images/I/71+17bVYHxL._SL1000_.jpg" alt="images" width="400" height="200"/>
+        
+        <img src="https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_coco_16x9_9ccd7110.jpeg" alt="wallaper_image" width="400" height="200">
+        
+        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/02/Photoshop-Replace-Background-Featured.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5" alt="img_girl" width="450" height="200"/>
+       
+       </div> <br><br> <hr>  
+
+    <!-- 3. Write code to print following formula on web page
+    (a+b)2 = a2 + 2ab + b2  -->
+
+   <p>(a+b)<sup>2</sup> = a <sup>2</sup>+ 2ab + b<sup>2</sup></p><br><br>
+   <hr>
+
+    <!-- 4. Insert an image inside anchor tag. such that clicking the image takes you to the website ? -->
+       <a href="https://www.amazon.in/"><img src="https://i.pinimg.com/originals/e3/12/6d/e3126dd634dccbcf1cba097837d72ccb.jpg" alt="img" width="300" height="200"/> </a>
+    <br> <hr>
+
+    <!-- 5. Create a web page with different images and apply height, width border attributes to the same ? -->
+   <div>
+    <img src="https://t4.ftcdn.net/jpg/03/39/53/87/360_F_339538724_AI3E02IF5v77nGn4ZMZj1qwMUOZRebGe.jpg" alt="nature_img" width="450" height="300" style="border: 4px solid red;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJahR55VI5gVd2BBzih0ok9J2XmdaBTTuJ0skbQvuKUn6nN_01Ir9e6NwnMyfhuT46Gc&usqp=CAU" alt="nature_img" width="450" height="300" style="border: 4px solid blue;">
+    <img src="https://img.wallpapic.com/i9951-027-321/thumb/stream-nature-alaska-forest-wallpaper.jpg" alt="nature_img" width="400" height="300" style="border: 4px solid green;">
+    
+   </div><br>
+   <hr>
+
+
+   <!-- 7. Create a form to accept details from a student for college registration. Think about what 
+       inputs who will like to accept from the student. Design the form accordingly. You should 
+       be using these tags compulsorily :- input, label, radio button, check box, date, text area, and button . -->
+
+       <div class="mydiv mt-5 mb-5">
+          <h4>Registration Page</h4>
+          <form action="/action_page.php" method="get">
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" placeholder="Enter Your First Name...">
+          <label for="lname">Last Name</label><br>
+          <input type="text" name="lname" placeholder="Enter Your Last Name...">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Enter Your Email...">
+          <label for="phone">Phone</label>
+          <input type="phone" name="phone" placeholder="Enter Your Phone No.">
+          <label for="date">Birthday</label>
+          <input type="date" name="date" placeholder="Enter Your Birth_Date">
+          Gender:
+          <input type="radio" name="gender" value="male"  checked>Male
+          <input type="radio" name="gender" value="female">Female  <br><br>
+                      
+          <label for="message">Message</label>
+         <textarea name="meaage" id="" cols="85" rows="4" placeholder="Typing....."></textarea><br>
+        
+         <button>Registration</button><br>
+         
+          <input type="checkbox"> I Agree to Terms & Conditions
+          
+        </form>
+       </div>
+
+
+       <!-- 6. Create a web site with following pages :
+       a. Home.html: It will contain general information about sports and four hyperlinks as 
+       Football, Cricket, Hockey, About Us.
+       Clicking on these hyperlinks will open the respective pages in the same browser window 
+       but about us section should open in different Window or tab.
+       b. Football.html : Contains images of football and overall information of football. 
+       c. Cricket.html : Contains images of cricket and overall information of cricket. This page 
+       also contains a set of hyperlinks with names of Players like 
+       Rohit Sharma
+       Virat Kohli
+       KL Rahul
+       Jaspeet Bumrah
+       Every name on this page should be linked to the player's profile on cricbuzz website. So 
+       when a name a clicked, it should open the cricbuzz profile page in a new tab/windows
+       d. Hockey.html: Contains images of hockey and overall information of hockey.
+       e. AboutUs.html: Contains contain details of the organization. -->
+
+
+</body> 
+</html>
